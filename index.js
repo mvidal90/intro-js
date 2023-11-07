@@ -16,7 +16,7 @@ const booleano = false; // (or true, para los datos tipo booleano)
 console.log("Hello world!");
 console.log(cadena);
 console.log(numero);
-console.log(booleano);
+console.log(typeof booleano);
 
 console.log("/--------------------------/")
 
