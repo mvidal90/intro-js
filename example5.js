@@ -19,3 +19,29 @@ for (let index = 0; index <= housesNumber; index++) {
 }
 
 console.log("FIN DE CICLO FOR")
+
+const cantGatos = 10;
+
+for (let i = 1; i <= cantGatos; i++) {
+    const modulo = i % 3;
+    let catNumber = `Gato #${i}`;
+    // if (modulo === 1) {
+    //     catNumber = catNumber.concat("😺");
+    // } else if (modulo === 2) {
+    //     catNumber = catNumber.concat("😸");
+    // } else {
+    //     catNumber = catNumber.concat("😹");
+    // }
+    switch (modulo) {
+        case 1: // ===
+            catNumber = catNumber.concat("😺");
+            break;
+        case 2:
+            catNumber = catNumber.concat("😸");
+            break;
+        default:
+            catNumber = catNumber.concat("😹");
+            break;
+    }
+    console.log(catNumber);
+}
