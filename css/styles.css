@@ -1,0 +1,12 @@
+
+html {
+    font-size: 16px;
+}
+
+.btn-dinamic {
+    background-color: rgb(117, 168, 213);
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+}
