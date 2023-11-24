@@ -44,3 +44,5 @@ console.log(showList(sectionList))
 //     return integranteNum
 // }
 // console.log(integrante())
+const exampleString = "Marcos Ariel"
+console.log(exampleString.includes("arcos")) // true
