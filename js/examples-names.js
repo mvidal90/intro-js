@@ -46,3 +46,31 @@ console.log(showList(sectionList))
 // console.log(integrante())
 const exampleString = "Marcos Ariel"
 console.log(exampleString.includes("arcos")) // true
+
+function getDuplicateStrings() {
+    let color;
+    const dataCollection = document.getElementsByTagName("p");
+    const firstPeopeNames = [];
+    const secondPeopeNames = [];
+    for (let index = 0; index < 2; index++) {
+        firstPeopeNames.push(dataCollection[index]); 
+    }
+    for (let index = 4; index < 6; index++) {
+        secondPeopeNames.push(dataCollection[index]); 
+    }
+    for (let index = 0; index < firstPeopeNames.length; index++) {
+        const name = firstPeopeNames[index];
+        for (let i = 0; i < secondPeopeNames.length; i++) {
+            const name2 = secondPeopeNames[i];
+            if (name.innerText === name2.innerText && (name.innerText || name2.innerText)) {
+                if (color === undefined) {
+                    color = window.prompt("Elija un color por favor:")
+                }
+                name.style = `color: ${color}`
+                name2.style = `color: ${color}`
+            }
+        }
+    }
+}
+
+getDuplicateStrings()
